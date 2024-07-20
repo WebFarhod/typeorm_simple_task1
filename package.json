@@ -1,0 +1,43 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "dev": "nodemon src/server.ts",
+    "test": "mocha -r ts-node/register/transpile-only -r esm tests/**/*.test.ts",
+    "test-dev": "nodemon --watch . --exec \"mocha -r ts-node/register/transpile-only -r esm tests/**/*.test.ts\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.16",
+    "@types/express": "^4.17.21",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^20.14.11",
+    "@types/supertest": "^6.0.2",
+    "chai": "^5.1.1",
+    "esm": "^3.2.25",
+    "mocha": "^10.6.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.6",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.1",
+    "pg": "^8.12.0",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20"
+  }
+}
